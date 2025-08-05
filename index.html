@@ -2,124 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mike Kema</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
       font-family: Arial, sans-serif;
-      background-image: url('portada.png');
+      background: url('fondo.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
       color: white;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 20px;
+      flex-direction: column;
     }
 
-    .content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px 25px;
-      border-radius: 20px;
-      max-width: 800px;
-      width: 100%;
-    }
-
-    .logo {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #e60000;
-      margin-bottom: 10px;
+    h1 {
+      color: #E60000;
+      font-size: 2.8em;
+      margin: 0.2em 0;
     }
 
     .mask {
-      width: 120px;
-      margin: 10px auto;
+      max-width: 180px;
+      width: 80%;
+      height: auto;
+      margin: 1em 0;
     }
 
-    .play-button {
-      font-size: 2.5em;
-      margin: 20px 0;
-      color: #e60000;
+    .mensaje {
+      max-width: 600px;
+      padding: 0 1em;
     }
 
-    .cta {
-      background-color: black;
-      padding: 10px 15px;
-      border-radius: 20px;
+    .mensaje p {
+      margin: 0.6em 0;
+      font-size: 1.1em;
+    }
+
+    .mensaje strong {
       font-weight: bold;
-      font-size: 1em;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-
-    .text-main {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-
-    .text-sub {
-      font-size: 1em;
-      margin: 5px 0;
+      font-size: 1.3em;
     }
 
     .footer {
-      margin-top: 20px;
+      margin-top: 2em;
       font-size: 1em;
-      opacity: 0.6;
+      color: #ccc;
     }
 
-    @media (max-width: 600px) {
-      .logo {
+    @media screen and (max-width: 600px) {
+      h1 {
         font-size: 2em;
       }
 
-      .mask {
-        width: 90px;
-      }
-
-      .play-button {
-        font-size: 2em;
-      }
-
-      .cta {
-        font-size: 0.9em;
-        padding: 8px 12px;
-      }
-
-      .text-main {
-        font-size: 1.1em;
-      }
-
-      .text-sub {
-        font-size: 0.95em;
+      .mensaje p {
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div class="logo">MIKE KEMA <span style="color:#e60000">❞</span></div>
-    <img src="image.jpg" alt="Máscara Mike Kema" class="mask" />
-    <div class="play-button">▶️</div>
-    <div class="cta">Dale al play y escucha el mensaje de Mike Kema</div>
-    <div class="text-main">
-      Todo el mundo tiene una versión más fuerte, valiente y capaz de conseguir cualquier cosa que se proponga.
-    </div>
-    <div class="text-sub">Tú también la tienes.</div>
-    <div class="text-sub">Pero si no la despiertas, nunca sabrás de lo que eres capaz.</div>
-    <div class="text-main">Yo he venido para ayudarte a activarla.</div>
-    <div class="footer">Web en construcción</div>
+  <h1>MIKE KEMA <span style="color: #E60000;">❞</span></h1>
+
+  <img src="portada.png" alt="Máscara Mike Kema" class="mask" />
+
+  <div class="mensaje">
+    <p><strong>Todo el mundo tiene una versión más fuerte, valiente y capaz de conseguir cualquier cosa que se proponga.</strong></p>
+    <p>Tú también la tienes.</p>
+    <p>Pero si no la despiertas, nunca sabrás de lo que eras capaz.</p>
+    <p><strong>Yo he venido para ayudarte a activarla.</strong></p>
   </div>
+
+  <div class="footer">Web en construcción</div>
 </body>
 </html>
