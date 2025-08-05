@@ -1,82 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Mike Kema</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: url('fondo.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      flex-direction: column;
+      height: 100%;
+      background-color: black;
     }
 
-    h1 {
-      color: #E60000;
-      font-size: 2.8em;
-      margin: 0.2em 0;
-    }
-
-    .mask {
-      max-width: 180px;
-      width: 80%;
-      height: auto;
-      margin: 1em 0;
-    }
-
-    .mensaje {
-      max-width: 600px;
-      padding: 0 1em;
-    }
-
-    .mensaje p {
-      margin: 0.6em 0;
-      font-size: 1.1em;
-    }
-
-    .mensaje strong {
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-
-    .footer {
-      margin-top: 2em;
-      font-size: 1em;
-      color: #ccc;
-    }
-
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      .mensaje p {
-        font-size: 1em;
-      }
+    .fullscreen-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <h1>MIKE KEMA <span style="color: #E60000;">❞</span></h1>
-
-  <img src="portada.png" alt="Máscara Mike Kema" class="mask" />
-
-  <div class="mensaje">
-    <p><strong>Todo el mundo tiene una versión más fuerte, valiente y capaz de conseguir cualquier cosa que se proponga.</strong></p>
-    <p>Tú también la tienes.</p>
-    <p>Pero si no la despiertas, nunca sabrás de lo que eras capaz.</p>
-    <p><strong>Yo he venido para ayudarte a activarla.</strong></p>
-  </div>
-
-  <div class="footer">Web en construcción</div>
+  <img src="portada.png" alt="Portada Mike Kema" class="fullscreen-image">
 </body>
 </html>
